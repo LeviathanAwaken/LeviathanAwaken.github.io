@@ -172,7 +172,7 @@ input, select, textarea {
 		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		outline: 0;
 	} */
-	a::before {
+	/* a::before { */
 		/* content: '';
 		background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/chris.jpg');
 		background-position: 0 30%;
@@ -185,7 +185,7 @@ input, select, textarea {
 		width: 100vw;
 		transform: translateY(100%);
 		transition: transform .3s; */
-	}
+	/* } */
 		/* a:hover {
 			color: #E27689;
 			border-bottom-color: rgba(255, 255, 255, 0);
