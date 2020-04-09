@@ -109,7 +109,6 @@ input, select, textarea {
 		line-height: 1.75em;
 		color: #888;
 	}
-
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		color: #666;
@@ -163,7 +162,7 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	a {
+	/* a {
 		text-decoration: none;
 		color: inherit;
 		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
@@ -172,12 +171,28 @@ input, select, textarea {
 		-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		outline: 0;
+	} */
+	a::before {
+		content: '';
+		background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/chris.jpg');
+		background-position: 0 30%;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height: 100vh;
+		left: 0;
+		position: absolute;
+		bottom: 0vh;
+		width: 100vw;
+		transform: translateY(100%);
+		transition: transform .3s;
 	}
-
-		a:hover {
+		/* a:hover {
 			color: #E27689;
 			border-bottom-color: rgba(255, 255, 255, 0);
-		}
+		} */
+		a:hover::before {
+			transform: translateY(0px);
+		  }
 
 	sub {
 		position: relative;
